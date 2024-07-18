@@ -32,7 +32,7 @@ const UsersList = () => {
           Authorization: `Bearer ${localStorage.getItem('token')}`
         }
       });
-      // Refresh the user list after adding a new user
+
       const response = await axios.get('http://localhost:3001/api/users', {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`
@@ -52,7 +52,7 @@ const UsersList = () => {
           Authorization: `Bearer ${localStorage.getItem('token')}`
         }
       });
-      // Refresh the user list after editing a user
+
       const response = await axios.get('http://localhost:3001/api/users', {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`
